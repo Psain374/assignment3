@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang = "en">   
+     <head>
+      <meta charset = "utf-8">
+      <title> Priya's Portfolio </title>
+      <meta name="keywords" content="html, css">
+      <meta name="description" content="This is a website for my personal portfolio that contains my resume & cover letter">
+      <meta name="authors" content="Priya Saini">
+      <meta name="viewport" content="width=device-width", initial-scale=1.0> 
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="CSS/contact.css" type="text/css">
+      <link rel="stylesheet" href="CSS/reset.css" type="text/css">
+    </head>
+    <body>
+    <header>
+       <nav>
+            <div class="logo">
+                <a id="Priya" href="Home.html">Priya Saini</a>
+            </div>
+            <ul class="navlinks">
+                <li><a href="Resume.html">Resume </a></li> 
+                <li><a href="Contact.html">Contact </a></li>
+            </ul>
+       </nav>
+    </header>
+        <article>
+            <section>
+                <h1>Contact Information</h1>
+                    <div class="contact">
+                        <div class="contact-box">
+                            <div class="contact-left">   
+                                <h3>Send Your Request</h3>
+                                <form method="post" action="mailto:Psain374@mtroyal.ca">
+                                <div class="input-row">
+                                <div class="input-group">
+                                    <label for="name">Name*</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>Phone</label>
+                                    <input name="tel" type="tel" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder="123-123-1234">
+                                </div>   
+                                </div>
+                                <div class="input-row">
+                                <div class="input-group">
+                                    <label>Email*</label>
+                                    <input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="50" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>Subject*</label>
+                                    <input name="subject" type="text" required>
+                                </div>
+                            </div>   
+                            <label>Date Sent <input name="date" type="date"></label> <br>         
+                                <label>Message</label>
+                                <textarea rows="5" placeholder="Your questions or concerns..."></textarea>
+                                <p>
+                                <button type="submit">Send</button> <button type="reset">Reset</button>
+                                </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                        <p>Check out my LinkedIn!<p>
+                        <a href="https://www.linkedin.com/in/priya-saini-4005a9176/"><button>LinkedIn</button></a>         
+                <footer>
+                       <br>
+                      <p>Copyright &copy; 2020 Priya's Portfolio</p>
+                </footer>
+        </article>
+    </body>
+</html>                
