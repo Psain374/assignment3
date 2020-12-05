@@ -1,0 +1,151 @@
+/*declare main color variables*/
+:root{
+    --theme-color: #9B8F7F;
+    --contentbox-color: #AA6255;
+    --navfoot-color: #544643;
+    --font-color: #000000;
+    --secondaryfont-color: #ffffff;
+}
+div {
+    font-size: 16px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif, "Times New Roman";
+    background-color: var(--theme-color);
+}
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--navfoot-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    color: var(--secondaryfont-color);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navlinks li{
+    list-style: none;
+}
+
+.navlinks a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#Priya{
+    text-decoration: none;
+    color: var(--secondaryfont-color);
+}
+/* Contact info */
+.contact{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: var(--contentbox-color);
+
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px 60px;
+    background: var(--contentbox-color);
+    color: var(--font-color);
+}
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px
+    
+}
+
+.input-row .input-group{
+    flex-basis: 45%
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid  #121a21;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: var(--font-color);
+    font-weight: bold;
+   
+}
+button{
+    background: var(--contentbox-color);
+    width: 100px;
+    border: none;
+    outline: none;
+    color:  var(--font-color);
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgb(77, 25, 25);
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    position: fixed;
+    background-color: var(--navfoot-color);
+    height: 50px;
+    color: var(--secondaryfont-color);
+    left: 0;
+    bottom: 0;
+    text-align: right;
+    padding: 30px 0px;
+}
+h4{
+    padding-top: 10px;
+}
